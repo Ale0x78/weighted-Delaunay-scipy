@@ -2,7 +2,7 @@
 
 # collaborators
 - Ale0x78
-- bitwiseor
+- bitwiseor (bschhatr)
 - eggabyte (mwklose)
 
 ## Storyboard
