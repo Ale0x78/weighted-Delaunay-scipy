@@ -1,23 +1,28 @@
 from scipy.spatial import ConvexHull, Delaunay
 
 class WeightedDelaunay(Delaunay):
-    def __init__(self):
-        print("I HAVE BEEN MADE")
-        pass
+    def __init__(self, points, weights=[], furthest_site=False, incremental=False, qhull_options=None):
+        super(points, furthest_site, incremental, qhull_options)
 
     # Process a set of additional new points.
     def add_points(self, points, restart=False):
         pass
+
     # Finish incremental processing.
+    # MARK SAYS: This does not depend on weights. Can remove.
     def close(self):
         pass
+
     # Find the simplices containing the given points.
+    # Need to look through weighted rather than 
     def find_simplex(self, xi, bruteforce=False, tol=None):
         pass
     # Lift points to the Qhull paraboloid.
     def lift_points(self, x):
         pass
+
     # Compute hyperplane distances to the point xi from all simplices.
+    # MARK SAYS: This does not depend on weights. Can remove.
     def plane_distance(self, xi):
         pass
 
